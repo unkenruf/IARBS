@@ -142,6 +142,7 @@ alias pa='pass add'
 alias update='sudo apt update;sudo apt upgrade'
 alias brave="brave-browser"
 alias ifconfig='sudo ifconfig'
+alias obsidian='/opt/Obsidian-0.15.9.AppImage'
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /home/linux/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
  linux@debian  ~ 

@@ -1,11 +1,25 @@
 #!/usr/bin/env bash
 
-# Repo Additions
-
-# Repo Installations
+# Basics
 sudo apt install git -y
 sudo apt install wget -y
 sudo apt install curl -y
+sudo apt install apt-transport-https curl -y
+
+# Repo Additions
+
+# Signal Pre-reqs
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
+  sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+  
+ # Brave Pre-reqs
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+# Repo Installations
+sudo apt update
 sudo apt install neovim -y
 sudo apt install neofetch -y
 sudo apt install zsh -y
@@ -30,10 +44,8 @@ sudo apt install cmake -y
 sudo apt install nodejs -y
 sudo apt install npm -y
 sudo apt install exuberant-ctags -y
-
-
-# Pip requirements for the repos below & vim plugins
-# sudo pip3 install -r requirements.txt
+sudo apt install signal-desktop -y
+sudo apt install brave-browser -y
 
 # Install some dot files
 curl -Ls https://raw.githubusercontent.com/LinuxUser255/BashAndLinux/main/UsrBin/.zshrc -o ~/.zshrc
@@ -87,35 +99,7 @@ sh /opt/Mullvad_Wireguard/install.sh
 curl -Ls https://obsidian.md/Obsidian-0.15.9.AppImage -o  ~/.local/share/applications/Obsidian-0.15.9.AppImage
 chmod +x /opt/Obsidian-0.15.9.AppImage
 
-# Install Signal
-# Install our official public software signing key
-wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
-cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
-
-# repository to your list of repositories
-echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
-  sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-
-# Update your package database and install signal
-sudo apt update; sudo apt install signal-desktop
-
-# Install Brave browser
-sudo apt install apt-transport-https curl
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser
-
-# Download and Install INtelliJ IDE and Pycharm
-#mkdir /opt/Pycharm
-#sudo chown ${USER} /opt/Pycharm
-#curl -Ls https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC -o /opt/Pycharm
-
-#mkdir /opt/INtelliJ_Idea
-#sudo chown ${USER} /opt/IntelliJ_IDEA
-#curl -Ls https://www.jetbrains.com/idea/download/download-thanks.html?platform=linux&code=IIC -o /opt/IntelliJ_IDEA
-
-# Install plugins for vim and neovim
+# Install plugins for neovim
 ## Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -125,9 +109,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Chang Default Shell to use ZSH
 chsh -s $(which zsh)
-
-# NeoVim CHad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 # Final update
 sudo apt update && sudo apt upgrade -y

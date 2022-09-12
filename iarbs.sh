@@ -40,12 +40,14 @@ sudo apt install sqlmap -y
 sudo apt install netdiscover -y
 sudo apt install nmap -y
 sudo apt install wireshark -y
+sudo apt install python3-pip -y
 sudo apt install cmake -y
 sudo apt install nodejs -y
 sudo apt install npm -y
 sudo apt install exuberant-ctags -y
 sudo apt install signal-desktop -y
 sudo apt install brave-browser -y
+sudo npm install -g yarn
 
 # Install some dot files
 curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.zshrc?token=GHSAT0AAAAAABYVQIEXFUOAHZ43AKEQNJ4EYY7KNMA -o ~/.zshrc
@@ -89,6 +91,7 @@ wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz -P /opt/scrawle
 tar zxvf v4.0.tar.gz
 cd spiderfoot-4.0
 pip3 install -r requirements.txt
+cd ~
 
 # Install Wireguard and Mullvad
 chmod +x /opt/Mullvad_Wireguard/install.sh
@@ -99,11 +102,17 @@ curl -Ls https://obsidian.md/Obsidian-0.15.9.AppImage -o  ~/.local/share/applica
 chmod +x /opt/Obsidian-0.15.9.AppImage
 
 # Neovim Configuration
-# Grab config file
-
 ## Vim Plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+## Config Pull
+curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/init.vim?token=GHSAT0AAAAAABYVQIEWAN7QQEQRT6EHTOQQYY7PVFQ -o ~/.config/nvim/init.vim
+
+cd ~/.config/nvim/plugged/coc.nvim
+yarn install
+yarn build
+       
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -115,5 +124,5 @@ chsh -s $(which zsh)
 sudo apt update && sudo apt upgrade -y
 
 echo ""
-echo "DONE!"
+echo "DONE! Don't forget to :PlugInstall your NeoVim"
 echo ""

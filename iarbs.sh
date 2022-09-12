@@ -48,9 +48,8 @@ sudo apt install signal-desktop -y
 sudo apt install brave-browser -y
 
 # Install some dot files
-curl -Ls https://raw.githubusercontent.com/LinuxUser255/BashAndLinux/main/UsrBin/.zshrc -o ~/.zshrc
-
-curl -Ls https://raw.githubusercontent.com/LinuxUser255/BashAndLinux/main/UsrBin/.bashrc -o ~/.bashrc
+curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.zshrc?token=GHSAT0AAAAAABYVQIEXFUOAHZ43AKEQNJ4EYY7KNMA -o ~/.zshrc
+curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.bashrc?token=GHSAT0AAAAAABYVQIEXO2SZVZ4FY5URBD3QYY7KILQ -o ~/.bashrc
 
 # Hacking Tools
 git clone https://github.com/aboul3la/Sublist3r.git /opt/Sublist3r/
@@ -99,7 +98,9 @@ sh /opt/Mullvad_Wireguard/install.sh
 curl -Ls https://obsidian.md/Obsidian-0.15.9.AppImage -o  ~/.local/share/applications/Obsidian-0.15.9.AppImage
 chmod +x /opt/Obsidian-0.15.9.AppImage
 
-# Install plugins for neovim
+# Neovim Configuration
+# Grab config file
+
 ## Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

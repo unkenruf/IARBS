@@ -55,37 +55,37 @@ curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.zshrc?token=GHSA
 curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.bashrc?token=GHSAT0AAAAAABYVQIEXO2SZVZ4FY5URBD3QYY7KILQ -o ~/.bashrc
 
 # Repos of unknown necessity
-git clone https://github.com/aboul3la/Sublist3r.git /opt/Sublist3r/
-git clone https://github.com/secureauthcorp/impacket.git /opt/impacket/
-git clone https://github.com/LinuxUser255/BashAndLinux.git /opt/BashAndLinux/
-git clone https://github.com/danielmiessler/SecLists.git  /opt/Seclists/
-git clone https://github.com/defparam/smuggler.git /opt/smuggler/
-git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git /opt/Pay-Loads-All-The-Things/
-git clone https://github.com/LinuxUser255/RandoHackingStuff.git /opt/HackingStuff/
-git clone https://github.com/LinuxUser255/Mullvad_Wireguard.git /opt/Mullvad_Wireguard/
-git clone https://github.com/LinuxUser255/Instagram-downloader.git /opt/Instagram-downloader/
-git clone https://github.com/LinuxUser255/passwordgen.git /opt/passwordgen/
-git clone https://github.com/LinuxUser255/Python_Intruder.git  /opt/Python_Intruder/
-git clone https://github.com/PortSwigger/http-request-smuggler.git /opt/http-request-smuggler/
-git clone https://github.com/LinuxUser255/Python-Object-Oriented-Programming---4th-edition.git  /opt/Python-Object-Oriented-Programming---4th-edition/
-git clone https://github.com/LinuxUser255/Micro-Degree-in-Python-Security.git  /opt/Micro-Degree-in-Python-Security/
-git clone https://github.com/LinuxUser255/Python-for-Everyday-Life.git  /opt/Python-for-Everyday-Life/
-git clone https://github.com/LinuxUser255/Expert-Python-Programming-Fourth-Edition.git  /opt/Expert-Python-Programming-Fourth-Edition/
-git clone https://github.com/LinuxUser255/turbo-intruder.git  /opt/turbo-intruder/
-git clone https://github.com/LinuxUser255/Python_Penetration_Testing.git  /opt/Python_Penetration_Testing/
-git clone https://github.com/LinuxUser255/Python-Fundamentals.git  /opt/Python-Fundamentals/
-git clone https://github.com/LinuxUser255/Modern-Python-Cookbook-Second-Edition.git  /opt/Modern-Python-Cookbook-Second-Edition/
-git clone https://github.com/LinuxUser255/Python-3-Object-Oriented-Programming-Third-Edition.git  /opt/Python-3-Object-Oriented-Programming-Third-Edition/
-git clone https://github.com/LinuxUser255/Clean-Code-in-Python-Second-Edition.git  /opt/Clean-Code-in-Python-Second-Edition/
-git clone https://github.com/LinuxUser255/Functional-Python-Programming-Second-Edition.git  /opt/Functional-Python-Programming-Second-Edition/
-git clone https://github.com/LinuxUser255/Python-Web-Scraping-Cookbook.git  /opt/Python-Web-Scraping-Cookbook/
-git clone https://github.com/LinuxUser255/Python-Penetration-Testing-Cookbook.git  /opt/Python-Penetration-Testing-Cookbook/
-git clone https://github.com/LinuxUser255/Learning-Concurrency-in-Python.git  /opt/Learning-Concurrency-in-Python/
-git clone https://github.com/LinuxUser255/Mastering-Python-Networking.git  /opt/Mastering-Python-Networking/
-git clone https://github.com/LinuxUser255/Effective-Python-Penetration-Testing.git  /opt/Effective-Python-Penetration-Testing/
-git clone https://github.com/LinuxUser255/Python-Web-Scraping-Second-Edition.git  /opt/Python-Web-Scraping-Second-Edition/
-git clone https://github.com/LinuxUser255/Welcome_to_INITECH.git  /opt/Welcome_to_INITECH/
-git clone https://github.com/LinuxUser255/MS17-011.git  /opt/MS17-011/
+#git clone https://github.com/aboul3la/Sublist3r.git /opt/Sublist3r/
+#git clone https://github.com/secureauthcorp/impacket.git /opt/impacket/
+#git clone https://github.com/LinuxUser255/BashAndLinux.git /opt/BashAndLinux/
+#git clone https://github.com/danielmiessler/SecLists.git  /opt/Seclists/
+#git clone https://github.com/defparam/smuggler.git /opt/smuggler/
+#git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git /opt/Pay-Loads-All-The-Things/
+#git clone https://github.com/LinuxUser255/RandoHackingStuff.git /opt/HackingStuff/
+#git clone https://github.com/LinuxUser255/Mullvad_Wireguard.git /opt/Mullvad_Wireguard/
+#git clone https://github.com/LinuxUser255/Instagram-downloader.git /opt/Instagram-downloader/
+#git clone https://github.com/LinuxUser255/passwordgen.git /opt/passwordgen/
+#git clone https://github.com/LinuxUser255/Python_Intruder.git  /opt/Python_Intruder/
+#git clone https://github.com/PortSwigger/http-request-smuggler.git /opt/http-request-smuggler/
+#git clone https://github.com/LinuxUser255/Python-Object-Oriented-Programming---4th-edition.git  /opt/Python-Object-Oriented-Programming---4th-edition/
+#git clone https://github.com/LinuxUser255/Micro-Degree-in-Python-Security.git  /opt/Micro-Degree-in-Python-Security/
+#git clone https://github.com/LinuxUser255/Python-for-Everyday-Life.git  /opt/Python-for-Everyday-Life/
+#git clone https://github.com/LinuxUser255/Expert-Python-Programming-Fourth-Edition.git  /opt/Expert-Python-Programming-Fourth-Edition/
+#git clone https://github.com/LinuxUser255/turbo-intruder.git  /opt/turbo-intruder/
+#git clone https://github.com/LinuxUser255/Python_Penetration_Testing.git  /opt/Python_Penetration_Testing/
+#git clone https://github.com/LinuxUser255/Python-Fundamentals.git  /opt/Python-Fundamentals/
+#git clone https://github.com/LinuxUser255/Modern-Python-Cookbook-Second-Edition.git  /opt/Modern-Python-Cookbook-Second-Edition/
+#git clone https://github.com/LinuxUser255/Python-3-Object-Oriented-Programming-Third-Edition.git  /opt/Python-3-Object-Oriented-Programming-Third-Edition/
+#git clone https://github.com/LinuxUser255/Clean-Code-in-Python-Second-Edition.git  /opt/Clean-Code-in-Python-Second-Edition/
+#git clone https://github.com/LinuxUser255/Functional-Python-Programming-Second-Edition.git  /opt/Functional-Python-Programming-Second-Edition/
+#git clone https://github.com/LinuxUser255/Python-Web-Scraping-Cookbook.git  /opt/Python-Web-Scraping-Cookbook/
+#git clone https://github.com/LinuxUser255/Python-Penetration-Testing-Cookbook.git  /opt/Python-Penetration-Testing-Cookbook/
+#git clone https://github.com/LinuxUser255/Learning-Concurrency-in-Python.git  /opt/Learning-Concurrency-in-Python/
+#git clone https://github.com/LinuxUser255/Mastering-Python-Networking.git  /opt/Mastering-Python-Networking/
+#git clone https://github.com/LinuxUser255/Effective-Python-Penetration-Testing.git  /opt/Effective-Python-Penetration-Testing/
+#git clone https://github.com/LinuxUser255/Python-Web-Scraping-Second-Edition.git  /opt/Python-Web-Scraping-Second-Edition/
+#git clone https://github.com/LinuxUser255/Welcome_to_INITECH.git  /opt/Welcome_to_INITECH/
+#git clone https://github.com/LinuxUser255/MS17-011.git  /opt/MS17-011/
 
 #Hacking Tools
 ## Crackmap Exec
@@ -93,20 +93,20 @@ python3 -m pip install pipx
 pipx ensurepath
 pipx install crackmapexec
 
-#Spiderfoot
-wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz -P /opt/scrawler/spiderfoot/v4.0.tar.gz
-tar zxvf v4.0.tar.gz
-cd spiderfoot-4.0
-pip3 install -r requirements.txt
-cd ~
+##Spiderfoot
+#wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz -P /opt/scrawler/spiderfoot/v4.0.tar.gz
+#tar zxvf v4.0.tar.gz
+#cd spiderfoot-4.0
+#pip3 install -r requirements.txt
+#cd ~
 
 # Install Wireguard and Mullvad
-chmod +x /opt/Mullvad_Wireguard/install.sh
-sh /opt/Mullvad_Wireguard/install.sh
+#chmod +x /opt/Mullvad_Wireguard/install.sh
+#sh /opt/Mullvad_Wireguard/install.sh
 
 # Install Obsidian, the markdown note taking app
 curl -Ls https://obsidian.md/Obsidian-0.15.9.AppImage -o  ~/.local/share/applications/Obsidian-0.15.9.AppImage
-chmod +x /opt/Obsidian-0.15.9.AppImage
+chmod +x ~/.local/share/applications/Obsidian-0.15.9.AppImage
 
 # Neovim Configuration
 ## Vim Plug
@@ -119,6 +119,7 @@ curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/init.vim?token=GH
 cd ~/.config/nvim/plugged/coc.nvim
 yarn install
 yarn build
+cd ~
        
 
 # install oh-my-zsh

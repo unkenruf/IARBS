@@ -48,12 +48,13 @@ sudo apt install exuberant-ctags -y
 sudo apt install signal-desktop -y
 sudo apt install brave-browser -y
 sudo npm install -g yarn
+sudp apt install python3-venv -y
 
 # Install some dot files
 curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.zshrc?token=GHSAT0AAAAAABYVQIEXFUOAHZ43AKEQNJ4EYY7KNMA -o ~/.zshrc
 curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.bashrc?token=GHSAT0AAAAAABYVQIEXO2SZVZ4FY5URBD3QYY7KILQ -o ~/.bashrc
 
-# Hacking Tools
+# Repos of unknown necessity
 git clone https://github.com/aboul3la/Sublist3r.git /opt/Sublist3r/
 git clone https://github.com/secureauthcorp/impacket.git /opt/impacket/
 git clone https://github.com/LinuxUser255/BashAndLinux.git /opt/BashAndLinux/
@@ -85,6 +86,12 @@ git clone https://github.com/LinuxUser255/Effective-Python-Penetration-Testing.g
 git clone https://github.com/LinuxUser255/Python-Web-Scraping-Second-Edition.git  /opt/Python-Web-Scraping-Second-Edition/
 git clone https://github.com/LinuxUser255/Welcome_to_INITECH.git  /opt/Welcome_to_INITECH/
 git clone https://github.com/LinuxUser255/MS17-011.git  /opt/MS17-011/
+
+#Hacking Tools
+## Crackmap Exec
+python3 -m pip install pipx
+pipx ensurepath
+pipx install crackmapexec
 
 #Spiderfoot
 wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz -P /opt/scrawler/spiderfoot/v4.0.tar.gz

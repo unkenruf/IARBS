@@ -51,8 +51,8 @@ sudo npm install -g yarn
 sudp apt install python3-venv -y
 
 # Install some dot files
-curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.zshrc?token=GHSAT0AAAAAABYVQIEXFUOAHZ43AKEQNJ4EYY7KNMA -o ~/.zshrc
-curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.bashrc?token=GHSAT0AAAAAABYVQIEXO2SZVZ4FY5URBD3QYY7KILQ -o ~/.bashrc
+curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.zshrc -o ~/.zshrc
+curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/.bashrc -o ~/.bashrc
 
 # Repos of unknown necessity
 #git clone https://github.com/aboul3la/Sublist3r.git /opt/Sublist3r/

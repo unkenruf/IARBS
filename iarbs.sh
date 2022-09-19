@@ -114,7 +114,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 ## Config Pull
-curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/init.vim?token=GHSAT0AAAAAABYVQIEWAN7QQEQRT6EHTOQQYY7PVFQ -o ~/.config/nvim/init.vim
+curl -Ls https://raw.githubusercontent.com/unkenruf/IARBS/main/init.vim -o ~/.config/nvim/init.vim
 
 cd ~/.config/nvim/plugged/coc.nvim
 yarn install

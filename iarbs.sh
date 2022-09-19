@@ -105,7 +105,7 @@ pipx install crackmapexec
 #sh /opt/Mullvad_Wireguard/install.sh
 
 # Install Obsidian, the markdown note taking app
-curl -Ls https://obsidian.md/Obsidian-0.15.9.AppImage -o  ~/.local/share/applications/Obsidian-0.15.9.AppImage
+curl -LO https://github.com/obsidianmd/obsidian-releases/releases/download/v0.15.9/Obsidian-0.15.9.AppImage -o  ~/.local/share/applications/Obsidian-0.15.9.AppImage
 chmod +x ~/.local/share/applications/Obsidian-0.15.9.AppImage
 
 # Neovim Configuration
